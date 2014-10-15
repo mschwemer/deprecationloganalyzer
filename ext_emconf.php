@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Filter out the duplicates of the log file because it is easier to check 11 messages than a 400mb log file.',
 	'category' => 'be',
 	'shy' => 0,
-	'version' => '1.1.0',
+	'version' => '1.1.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -32,15 +32,17 @@ $EM_CONF[$_EXTKEY] = array (
 	'author_company' => '',
 	'CGLcompliance' => NULL,
 	'CGLcompliance_note' => NULL,
-	'constraints' => 
+	'constraints' =>
 	array (
-		'depends' => 
+		'depends' =>
+			array(
+				'php' => '5.0.0-5.5.99',
+				'typo3' => '4.5.0-6.2.99',
+			),
+		'conflicts' =>
 		array (
 		),
-		'conflicts' => 
-		array (
-		),
-		'suggests' => 
+		'suggests' =>
 		array (
 		),
 	),
