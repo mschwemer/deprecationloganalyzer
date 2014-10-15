@@ -35,7 +35,7 @@ class Tx_Deprecationloganalyzer_Report_Log implements tx_reports_Report {
 	 */
 	protected $reportsModule;
 
-	public function __construct(tx_reports_Module $reportsModule) {
+	public function __construct($reportsModule) {
 	// public function __construct(tx_reports_Module $reportsModule) {
 		$this->reportsModule = $reportsModule;
 	}
